@@ -3,7 +3,8 @@
 #
 #############################################################################################
 # Problem: Given an array of integers, find the local maxima.
-# Taken from: geeksforgeeks.com - Google STEP Interview Experience
+# Taken from: geeksforgeeks.org - Google STEP Interview Experience
+# Big O: O(n)
 #############################################################################################
 
 
@@ -22,3 +23,4 @@ for i in range(len(arr)):
             maxima.append(arr[i])   # add to the list if found maxima
     
 print(maxima)   # prints the output on the console
+
