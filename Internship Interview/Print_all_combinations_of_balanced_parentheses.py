@@ -7,6 +7,7 @@
 # Big O: Not very sure (Using recursion)
 #############################################################################################
 
+
 def _printBrac(str, pos, n, open, close):
     if close == n:
         str = ''.join(str)
