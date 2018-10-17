@@ -11,7 +11,7 @@ def sockMerchant(n, ar):
             dict[ar[i]] = 1
         else:
             dict[ar[i]] = dict[ar[i]] + 1
-    print(dict)
+
     for key in dict:
         if dict[key] > 1:
             count += dict[key] // 2
