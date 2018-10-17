@@ -1,0 +1,19 @@
+############################################################
+# Author : Dostonbek Toirov
+# Time Complexity : Could be O(n^2) or O(n)
+############################################################
+
+def sockMerchant(n, ar):
+    count = 0 
+    dict = {}
+    for i in range(n):
+        if ar[i] not in dict:
+            dict[ar[i]] = 1
+        else:
+            dict[ar[i]] = dict[ar[i]] + 1
+    print(dict)
+    for key in dict:
+        if dict[key] > 1:
+            count += dict[key] // 2
+    
+    return count
